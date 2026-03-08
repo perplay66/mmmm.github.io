@@ -34,4 +34,13 @@ alert("☕ 500 cafés de amizade conquistados!")
 
 })
 
-})
+
+}) 
+window.addEventListener("load", () => {
+    const musica = document.getElementById("musica");
+    musica.volume = 0.5;
+    
+    document.addEventListener("click", () => {
+        musica.play();
+    }, { once: true });
+});
